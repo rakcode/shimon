@@ -19,12 +19,6 @@ Install the package using npm or yarn:
 npm install @rakcode/shimon
 ```
 
-or
-
-```bash
-yarn add @rakcode/shimon
-```
-
 ## Usage
 
 ### Basic Example (JavaScript / TypeScript)
