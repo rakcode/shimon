@@ -1,0 +1,44 @@
+{
+  "name": "@rakcode/shimon",
+  "version": "1.0.0",
+  "description": "A lightweight browser fingerprinting library for JavaScript and TypeScript, supporting major frontend frameworks like React, Angular, Vue, and Svelte.",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs",
+    "prepublishOnly": "npm run build",
+    "lint": "eslint 'src/**/*.ts'"
+  },
+  "keywords": [
+    "browser-fingerprint",
+    "fingerprint",
+    "device-tracking",
+    "user-identification",
+    "typescript",
+    "javascript",
+    "react",
+    "angular",
+    "vue",
+    "svelte"
+  ],
+  "author": {
+    "name": "Rakesh DL",
+    "url": "https://rakcode.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/rakcode/shimon",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rakcode/shimon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rakcode/shimon/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "eslint": "^9.21.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.7.3"
+  }
+}
