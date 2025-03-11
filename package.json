@@ -1,6 +1,6 @@
 {
   "name": "@rakcode/shimon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight browser fingerprinting library for JavaScript and TypeScript, supporting major frontend frameworks like React, Angular, Vue, and Svelte.",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -31,6 +31,10 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rakcode/shimon.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "bugs": {
     "url": "https://github.com/rakcode/shimon/issues"
