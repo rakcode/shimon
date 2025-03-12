@@ -24,9 +24,9 @@ npm install @rakcode/shimon
 ### Basic Example (JavaScript / TypeScript)
 
 ```typescript
-import { getBrowserFingerprint } from '@rakcode/shimon';
+import { takeImpression } from '@rakcode/shimon';
 
-getBrowserFingerprint().then((fingerprint) => {
+takeImpression().then((fingerprint) => {
   console.log('Fingerprint Data:', fingerprint);
 });
 ```
@@ -35,13 +35,13 @@ getBrowserFingerprint().then((fingerprint) => {
 
 ```jsx
 import React, { useEffect, useState } from 'react';
-import { getBrowserFingerprint } from '@rakcode/shimon';
+import { takeImpression } from '@rakcode/shimon';
 
 const FingerprintComponent = () => {
   const [fingerprint, setFingerprint] = useState(null);
 
   useEffect(() => {
-    getBrowserFingerprint().then(setFingerprint);
+    takeImpression().then(setFingerprint);
   }, []);
 
   return <pre>{JSON.stringify(fingerprint, null, 2)}</pre>;
@@ -54,9 +54,9 @@ export default FingerprintComponent;
 
 ```html
 <script type="module">
-  import { getBrowserFingerprint } from 'https://cdn.jsdelivr.net/npm/@rakcode/shimon/+esm';
+  import { takeImpression } from 'https://cdn.jsdelivr.net/npm/@rakcode/shimon/+esm';
 
-  getBrowserFingerprint().then((fingerprint) => {
+  takeImpression().then((fingerprint) => {
     console.log('Fingerprint:', fingerprint);
   });
 </script>

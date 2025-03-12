@@ -1,12 +1,12 @@
 {
   "name": "@rakcode/shimon",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "A lightweight browser fingerprinting library for JavaScript and TypeScript, supporting major frontend frameworks like React, Angular, Vue, and Svelte.",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs",
+    "build": "tsup src/index.ts --format esm,cjs --dts",
     "prepublishOnly": "npm run build",
     "lint": "eslint 'src/**/*.ts'"
   },

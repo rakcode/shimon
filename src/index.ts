@@ -24,7 +24,7 @@ export const takeImpression = async (): Promise<Record<string, string>> => {
       audio: getAudioFingerprint(),
     };
   
-    fingerprintData.hash = await sha256(Object.values(fingerprintData).join("||"));
+    fingerprintData.fingerprint = await sha256(Object.values(fingerprintData).join("||"));
   
     return fingerprintData;
   };
